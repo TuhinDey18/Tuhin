@@ -1,60 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuhin Dey - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuhin Dey - Cyberpunk Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="fade-in">Tuhin Dey</h1>
-        <p class="subtitle">AI & Cybersecurity Enthusiast | Developer | Tech Explorer</p>
-    </header>
-
-    <nav>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="neon-text">Tuhin Dey</h1>
+      <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="neon-link">About</a></li>
+          <li><a href="#experience" class="neon-link">Experience</a></li>
+          <li><a href="#skills" class="neon-link">Skills</a></li>
+          <li><a href="#projects" class="neon-link">Projects</a></li>
+          <li><a href="#education" class="neon-link">Education</a></li>
+          <li><a href="#hobby" class="neon-link">Hobby</a></li>
+          <li><a href="#contact" class="neon-link">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>B.Tech in Computer Science and Technology | IEM Kolkata</p>
-        <p>Passionate about AI, Cybersecurity, and Web Development.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h2 class="neon-text">Welcome to My Cyberpunk World</h2>
+      <p class="neon-text">Code | Create | Innovate</p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>AI & Data Science</h3>
-            <p>Worked on multiple AI-based projects, integrating ML models.</p>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="neon-text">About Me</h2>
+      <p>Hi, I'm Tuhin Dey, a passionate developer with a love for futuristic designs and cutting-edge technology.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="neon-text">Experience</h2>
+      <ul>
+        <li>Software Developer at XYZ Corp (2022-Present)</li>
+        <li>Intern at ABC Tech (2021-2022)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="neon-text">Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Node.js</li>
+        <li>Python, Java</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="neon-text">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A futuristic dashboard design.</p>
         </div>
-        <div class="project">
-            <h3>Web Development & Cybersecurity</h3>
-            <p>Created modern, responsive websites with enhanced security features.</p>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>An AI-powered chatbot.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p><i class="fas fa-guitar"></i> Playing Guitar & Singing</p>
-        <p><i class="fas fa-paint-brush"></i> Drawing & Video Editing</p>
-    </section>
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="neon-text">Education</h2>
+      <ul>
+        <li>Bachelor of Computer Science - University of XYZ (2018-2022)</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">tuhindey256@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/TuhinDey18" target="_blank">TuhinDey18</a></p>
-    </section>
+  <!-- Hobby Section -->
+  <section id="hobby">
+    <div class="container">
+      <h2 class="neon-text">Hobby</h2>
+      <p>I love gaming, coding, and exploring new technologies.</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Tuhin Dey | Designed with ❤️</p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="neon-text">Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="neon-button">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="neon-text">&copy; 2023 Tuhin Dey. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
