@@ -1,73 +1,135 @@
+/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #2A0A0A;
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  background: #0d0d0d;
+  color: #00ffea;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Neon Text */
+.neon-text {
+  color: #00ffea;
+  text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
+/* Header */
 header {
-    margin-top: 50px;
-    font-size: 2rem;
-    animation: fadeIn 2s ease-in-out;
+  background: rgba(13, 13, 13, 0.9);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.subtitle {
-    font-size: 1.2rem;
-    color: #B22222;
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 20px;
+nav a {
+  color: #00ffea;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
+nav a:hover {
+  text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
 }
 
-nav ul li a:hover {
-    color: #B22222;
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('assets/images/cyberpunk-bg.jpg') no-repeat center/cover;
 }
 
+#hero h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+/* Sections */
 section {
-    margin: 50px auto;
-    width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-    background: #400000;
-    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.2);
+  padding: 100px 0;
 }
 
-.project {
-    background: #5A0C0C;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.project:hover {
-    transform: scale(1.05);
+.project-card {
+  background: rgba(0, 255, 234, 0.1);
+  padding: 20px;
+  border: 2px solid #00ffea;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffea;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  background: rgba(0, 255, 234, 0.1);
+  border: 2px solid #00ffea;
+  color: #00ffea;
+}
+
+form button {
+  background: #00ffea;
+  color: #0d0d0d;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0d0d0d;
+  color: #00ffea;
+  box-shadow: 0 0 10px #00ffea;
+}
+
+/* Footer */
 footer {
-    padding: 20px;
-    font-size: 1rem;
-    background: #1A0000;
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(13, 13, 13, 0.9);
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
