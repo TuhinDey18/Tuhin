@@ -1,125 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tuhin Dey - Cyberpunk Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuhin | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="neon-text">Tuhin Dey</h1>
-      <nav>
-        <ul>
-          <li><a href="#about" class="neon-link">About</a></li>
-          <li><a href="#experience" class="neon-link">Experience</a></li>
-          <li><a href="#skills" class="neon-link">Skills</a></li>
-          <li><a href="#projects" class="neon-link">Projects</a></li>
-          <li><a href="#education" class="neon-link">Education</a></li>
-          <li><a href="#hobby" class="neon-link">Hobby</a></li>
-          <li><a href="#contact" class="neon-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container">
-      <h2 class="neon-text">Welcome to My Cyberpunk World</h2>
-      <p class="neon-text">Code | Create | Innovate</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="neon-text">About Me</h2>
-      <p>Hi, I'm Tuhin Dey, a passionate developer with a love for futuristic designs and cutting-edge technology.</p>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <div class="container">
-      <h2 class="neon-text">Experience</h2>
-      <ul>
-        <li>Software Developer at XYZ Corp (2022-Present)</li>
-        <li>Intern at ABC Tech (2021-2022)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="neon-text">Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Node.js</li>
-        <li>Python, Java</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="neon-text">Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>A futuristic dashboard design.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Tuhin</div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>An AI-powered chatbot.</p>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Education Section -->
-  <section id="education">
-    <div class="container">
-      <h2 class="neon-text">Education</h2>
-      <ul>
-        <li>Bachelor of Computer Science - University of XYZ (2018-2022)</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="highlight">Tuhin</span></h1>
+            <div class="typewriter">
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Building digital experiences that make a difference</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-primary">View My Work</a>
+                <a href="#contact" class="cta-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/TuhinDey18" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
 
-  <!-- Hobby Section -->
-  <section id="hobby">
-    <div class="container">
-      <h2 class="neon-text">Hobby</h2>
-      <p>I love gaming, coding, and exploring new technologies.</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <div class="image-container">
+                    <img src="assets/images/profile.jpg" alt="Tuhin">
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h3>Who am I?</h3>
+                <p>I'm a passionate developer with a strong focus on creating beautiful, functional websites and applications. With a keen eye for design and a love for clean code, I strive to build digital experiences that not only look great but also perform exceptionally well.</p>
+                <p>My journey in tech began when I first discovered the power of turning ideas into reality through code. Since then, I've been continuously learning and growing my skills to stay at the forefront of web development technologies.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-title">Name:</span>
+                        <span class="info-value">Tuhin</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Email:</span>
+                        <span class="info-value">contact@tuhin.dev</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Location:</span>
+                        <span class="info-value">Somewhere Awesome</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Availability:</span>
+                        <span class="info-value">Open to opportunities</span>
+                    </div>
+                </div>
+                <a href="#" class="btn-download">Download CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="neon-text">Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="neon-button">Send</button>
-      </form>
-    </div>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Experience</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Web Developer</h3>
+                    <span class="time">2023 - Present</span>
+                    <p>Leading front-end development projects and implementing responsive design principles. Working with modern frameworks and libraries to create engaging user experiences.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>UI/UX Designer</h3>
+                    <span class="time">2021 - 2023</span>
+                    <p>Designed user interfaces and experiences for various web and mobile applications. Collaborated with development teams to ensure design implementation met specifications.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Junior Developer</h3>
+                    <span class="time">2019 - 2021</span>
+                    <p>Assisted in developing and maintaining websites, fixed bugs, and implemented new features. Worked closely with senior developers to learn best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p class="neon-text">&copy; 2023 Tuhin Dey. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category" data-aos="fade-right">
+                <h3>Frontend</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>HTML/CSS</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>JavaScript</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>React</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category" data-aos="fade-left">
+                <h3>Backend</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Node.js</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Python</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>MongoDB</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category" data-aos="fade-right">
+                <h3>Design</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Figma</p>
+                            <p>85%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Adobe XD</p>
+                            <p>80%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Photoshop</p>
+                            <p>70%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category" data-aos="fade-left">
+                <h3>Other</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Git/GitHub</p>
+                            <p>90%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>Responsive Design</p>
+                            <p>95%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <p>SEO</p>
+                            <p>75%</p>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Education</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="education-container" data-aos="fade-up">
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <span class="year">2019 - 2023</span>
+                    <h3>Bachelor's Degree in Computer Science</h3>
+                    <p>University Name</p>
+                    <p>Focused on web development, data structures, and algorithms. Participated in various coding competitions and hackathons.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="education-content">
+                    <span class="year">2022</span>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Online Bootcamp</p>
+                    <p>Intensive program covering modern web development technologies, frontend frameworks, and backend systems.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="education-content">
+                    <span class="year">2021</span>
+                    <h3>UI/UX Design Certification</h3>
+                    <p>Design Institute</p>
+                    <p>Learned principles of user interface and experience design, prototyping, and usability testing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-container">
+            <div class="project-item" data-category="web" data-aos="fade-up">
+                <div class="project-img">
+                    <img src="assets/images/cyberpunk-bg.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>Cyberpunk Portfolio</h3>
+                    <p>A personal portfolio website with cyberpunk aesthetic and interactive elements.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/TuhinDey18/Tuhin" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="app" data-aos="fade-up">
+                <div class="project-img">
+                    <img src="assets/images/project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Task Manager App</h3>
+                    <p>A full-stack task management application with user authentication and real-time updates.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="design" data-aos="fade-up">
+                <div class="project-img">
+                    <img src="assets/images/project3.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce UI Design</h3>
+                    <p>A modern UI design for an e-commerce platform with dark mode and sleek animations.</p>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI/UX</span>
+                        <span>Prototype</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="web" data-aos="fade-up">
+                <div class="project-img">
+                    <img src="assets/images/project4.jpg" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A weather application that provides real-time weather information and forecasts.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Hobbies & Interests</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="hobbies-container">
+            <div class="hobby-item" data-aos="zoom-in">
+                <div class="hobby-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Reading</h3>
+                <p>I enjoy science fiction and tech-related books that expand my imagination.</p>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in">
+                <div class="hobby-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Coding Challenges</h3>
+                <p>I participate in coding competitions to improve my problem-solving skills.</p>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in">
+                <div class="hobby-icon">
+                    <i class="fas fa-hiking"></i>
+                </div>
+                <h3>Hiking</h3>
+                <p>Exploring nature helps me clear my mind and find new inspiration.</p>
+            </div>
+            <div class="hobby-item" data-aos="zoom-in">
+                <div class="hobby-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography</h3>
+                <p>Capturing moments and editing them gives me a creative outlet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>City, Country</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>contact@tuhin.dev</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+1 234 567 8900</p>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <a href="https://github.com/TuhinDey18" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Tuhin</div>
+            <p>© 2025 Tuhin. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/TuhinDey18" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-arrow">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
